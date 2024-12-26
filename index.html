@@ -3,92 +3,107 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anjana's Portfolio</title>
+  <title>Anjana Sathwika Reddy Depa - Portfolio</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      color: #333;
       background: #f4f4f9;
-      line-height: 1.6;
+      color: #333;
     }
+
     header {
-      background: #333;
+      background: linear-gradient(135deg, #0066ff, #003399);
       color: #fff;
-      padding: 1rem 0;
+      padding: 2rem 0;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
-      text-transform: uppercase;
     }
+
     header p {
-      font-size: 1.2rem;
       margin-top: 0.5rem;
+      font-size: 1.2rem;
     }
+
     .container {
-      width: 80%;
+      width: 90%;
+      max-width: 1200px;
       margin: auto;
-      overflow: hidden;
       padding: 2rem 0;
     }
+
+    .about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #0066ff;
+      display: block;
+      margin: 0 auto 1rem auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
     .section {
       margin-bottom: 2rem;
     }
-    h2 {
-      color: #333;
-      margin-bottom: 1rem;
-      font-size: 2rem;
-      text-align: center;
-      border-bottom: 2px solid #555;
-      display: inline-block;
-    }
-    p {
-      margin: 1rem 0;
-    }
-    .skills, .projects {
+
+    .skills, .projects, .internships {
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem;
       justify-content: center;
+      gap: 1rem;
     }
-    .skills div, .projects div {
+
+    .skills div, .projects div, .internships div {
       background: #fff;
       padding: 1rem;
       border: 1px solid #ddd;
-      border-radius: 5px;
+      border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: calc(33% - 2rem);
       text-align: center;
+      width: calc(33% - 2rem);
     }
-    .skills div:hover, .projects div:hover {
-      border-color: #333;
-      transform: translateY(-3px);
-      transition: 0.3s ease-in-out;
+
+    .skills div img, .projects div img, .internships div img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 1rem;
     }
+
     footer {
       background: #333;
       color: #fff;
       text-align: center;
       padding: 1rem 0;
-      margin-top: 2rem;
     }
+
     footer a {
       color: #00bcd4;
       text-decoration: none;
     }
+
     footer a:hover {
       text-decoration: underline;
     }
+
     @media (max-width: 768px) {
-      .skills div, .projects div {
+      .skills div, .projects div, .internships div {
         width: calc(50% - 2rem);
       }
     }
+
     @media (max-width: 500px) {
-      .skills div, .projects div {
+      .skills div, .projects div, .internships div {
         width: 100%;
       }
     }
@@ -97,50 +112,101 @@
 <body>
   <header>
     <h1>Anjana Sathwika Reddy Depa</h1>
-    <p>Electronics Engineer | Developer | Tech Enthusiast</p>
+    <p>B.Tech 4th Year | Aspiring IT Professional</p>
   </header>
+
   <div class="container">
-    <section class="section">
+    <!-- About Section -->
+    <section class="about section">
       <h2>About Me</h2>
-      <p>Hello! I'm Anjana, an aspiring Electronics Engineer with a passion for technology and innovation. Welcome to my portfolio!</p>
+      <img src="profile-pic.jpg" alt="Anjana Sathwika Reddy Depa">
+      <p>Hello! I'm Anjana, a final-year Electronics and Communication Engineering student with a strong interest in IT and software development. I'm passionate about learning and building innovative solutions.</p>
     </section>
+
+    <!-- Skills Section -->
     <section class="section">
       <h2>Skills</h2>
       <div class="skills">
-        <div>Python</div>
-        <div>C++</div>
-        <div>SQL</div>
-        <div>Embedded Systems</div>
-        <div>Machine Learning</div>
-        <div>Web Development</div>
+        <div>
+          <img src="icons/python.png" alt="Python">
+          <p>Python</p>
+        </div>
+        <div>
+          <img src="icons/cpp.png" alt="C++">
+          <p>C++</p>
+        </div>
+        <div>
+          <img src="icons/sql.png" alt="SQL">
+          <p>SQL</p>
+        </div>
+        <div>
+          <img src="icons/webdev.png" alt="Web Development">
+          <p>Web Development</p>
+        </div>
+        <div>
+          <img src="icons/machine-learning.png" alt="Machine Learning">
+          <p>Machine Learning</p>
+        </div>
+        <div>
+          <img src="icons/embedded.png" alt="Embedded Systems">
+          <p>Embedded Systems</p>
+        </div>
       </div>
     </section>
+
+    <!-- Internships Section -->
+    <section class="section">
+      <h2>Internships</h2>
+      <div class="internships">
+        <div>
+          <img src="logos/aws.png" alt="AWS">
+          <p><strong>Cloud Foundation</strong> at AWS</p>
+        </div>
+        <div>
+          <img src="logos/palo-alto.png" alt="Palo Alto Networks">
+          <p><strong>Cybersecurity</strong> at Palo Alto Networks</p>
+        </div>
+        <div>
+          <img src="logos/microchip.png" alt="Microchip">
+          <p><strong>Core Electronics</strong> at Microchip</p>
+        </div>
+        <div>
+          <img src="logos/cisco.png" alt="Cisco">
+          <p><strong>Internship</strong> at Cisco</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
     <section class="section">
       <h2>Projects</h2>
       <div class="projects">
         <div>
-          <h3>Project 1</h3>
+          <img src="project1-thumbnail.jpg" alt="Project 1">
           <p>Interactive Lung Health Analysis Platform</p>
         </div>
         <div>
-          <h3>Project 2</h3>
+          <img src="project2-thumbnail.jpg" alt="Project 2">
           <p>Real Estate Promotion Tool</p>
         </div>
         <div>
-          <h3>Project 3</h3>
+          <img src="project3-thumbnail.jpg" alt="Project 3">
           <p>Automated Exam Scheduler App</p>
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
     <section class="section">
       <h2>Contact</h2>
-      <p>Email: anjana@example.com</p>
+      <p>Email: <a href="mailto:anjana@example.com">anjana@example.com</a></p>
       <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
       <p>LinkedIn: <a href="https://linkedin.com/in/anjana" target="_blank">linkedin.com/in/anjana</a></p>
     </section>
   </div>
+
   <footer>
-    <p>&copy; 2024 Anjana Sathwika Reddy Depa | Designed with ❤️</p>
+    <p>&copy; 2024 Anjana Sathwika Reddy Depa | Designed with ❤️ and ambition</p>
   </footer>
 </body>
 </html>
