@@ -37,15 +37,6 @@
       padding: 2rem 0;
     }
 
-    .about img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 3px solid #0066ff;
-      display: block;
-      margin: 0 auto 1rem auto;
-    }
-
     h2 {
       text-align: center;
       font-size: 2rem;
@@ -55,29 +46,6 @@
 
     .section {
       margin-bottom: 2rem;
-    }
-
-    .skills, .projects, .internships {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-
-    .skills div, .projects div, .internships div {
-      background: #fff;
-      padding: 1rem;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      width: calc(33% - 2rem);
-    }
-
-    .skills div img, .projects div img, .internships div img {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 1rem;
     }
 
     footer {
@@ -95,18 +63,6 @@
     footer a:hover {
       text-decoration: underline;
     }
-
-    @media (max-width: 768px) {
-      .skills div, .projects div, .internships div {
-        width: calc(50% - 2rem);
-      }
-    }
-
-    @media (max-width: 500px) {
-      .skills div, .projects div, .internships div {
-        width: 100%;
-      }
-    }
   </style>
 </head>
 <body>
@@ -119,81 +75,41 @@
     <!-- About Section -->
     <section class="about section">
       <h2>About Me</h2>
-      <img src="profile-pic.jpg" alt="Anjana Sathwika Reddy Depa">
       <p>Hello! I'm Anjana, a final-year Electronics and Communication Engineering student with a strong interest in IT and software development. I'm passionate about learning and building innovative solutions.</p>
     </section>
 
     <!-- Skills Section -->
     <section class="section">
       <h2>Skills</h2>
-      <div class="skills">
-        <div>
-          <img src="icons/python.png" alt="Python">
-          <p>Python</p>
-        </div>
-        <div>
-          <img src="icons/cpp.png" alt="C++">
-          <p>C++</p>
-        </div>
-        <div>
-          <img src="icons/sql.png" alt="SQL">
-          <p>SQL</p>
-        </div>
-        <div>
-          <img src="icons/webdev.png" alt="Web Development">
-          <p>Web Development</p>
-        </div>
-        <div>
-          <img src="icons/machine-learning.png" alt="Machine Learning">
-          <p>Machine Learning</p>
-        </div>
-        <div>
-          <img src="icons/embedded.png" alt="Embedded Systems">
-          <p>Embedded Systems</p>
-        </div>
-      </div>
+      <ul>
+        <li>Python</li>
+        <li>C++</li>
+        <li>SQL</li>
+        <li>Web Development</li>
+        <li>Machine Learning</li>
+        <li>Embedded Systems</li>
+      </ul>
     </section>
 
     <!-- Internships Section -->
     <section class="section">
       <h2>Internships</h2>
-      <div class="internships">
-        <div>
-          <img src="logos/aws.png" alt="AWS">
-          <p><strong>Cloud Foundation</strong> at AWS</p>
-        </div>
-        <div>
-          <img src="logos/palo-alto.png" alt="Palo Alto Networks">
-          <p><strong>Cybersecurity</strong> at Palo Alto Networks</p>
-        </div>
-        <div>
-          <img src="logos/microchip.png" alt="Microchip">
-          <p><strong>Core Electronics</strong> at Microchip</p>
-        </div>
-        <div>
-          <img src="logos/cisco.png" alt="Cisco">
-          <p><strong>Internship</strong> at Cisco</p>
-        </div>
-      </div>
+      <ul>
+        <li>Cloud Foundation at AWS</li>
+        <li>Cybersecurity at Palo Alto Networks</li>
+        <li>Core Electronics at Microchip</li>
+        <li>Internship at Cisco</li>
+      </ul>
     </section>
 
     <!-- Projects Section -->
     <section class="section">
       <h2>Projects</h2>
-      <div class="projects">
-        <div>
-          <img src="project1-thumbnail.jpg" alt="Project 1">
-          <p>Interactive Lung Health Analysis Platform</p>
-        </div>
-        <div>
-          <img src="project2-thumbnail.jpg" alt="Project 2">
-          <p>Real Estate Promotion Tool</p>
-        </div>
-        <div>
-          <img src="project3-thumbnail.jpg" alt="Project 3">
-          <p>Automated Exam Scheduler App</p>
-        </div>
-      </div>
+      <ul>
+        <li>Interactive Lung Health Analysis Platform</li>
+        <li>Real Estate Promotion Tool</li>
+        <li>Automated Exam Scheduler App</li>
+      </ul>
     </section>
 
     <!-- Contact Section -->
