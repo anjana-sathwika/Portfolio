@@ -15,11 +15,14 @@ header {
 }
 
 .profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 150px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular shape */
     margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for aesthetics */
+    max-width: 100%; /* Ensure it doesn’t overflow the container */
 }
+
 
 .profile h1 {
     margin: 0;
